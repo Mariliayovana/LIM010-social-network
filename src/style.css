@@ -259,11 +259,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
- } 
-=======
 }
->>>>>>> 3f558c43f6c377d3a57fc430242b6ab2db2b36c0
  .btn-img {
     color: #f2ea77;
     background: #e41749;
@@ -404,10 +400,6 @@ main {
     justify-content: center;
     align-items: center;
 }
-<<<<<<< HEAD
-  
-=======
->>>>>>> 3f558c43f6c377d3a57fc430242b6ab2db2b36c0
     .logo, .foods-kids, .welcome-description {
           display: block;  
     }
