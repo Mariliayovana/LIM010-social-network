@@ -3,6 +3,7 @@ const loginEmail = (email, password) => firebase.auth().signInWithEmailAndPasswo
 // eslint-disable-next-line max-len
 const loginRegister = (email, password) => firebase.auth().createUserWithEmailAndPassword(email, password);
 
+// para salir de la sesión de un usuario//
 const loginOut = () => firebase.auth().signOut();
 
 const loginGoogle = () => {
@@ -14,8 +15,9 @@ const loginFacebook = () => {
   const provider = new firebase.auth.FacebookAuthProvider();
   return firebase.auth().signInWithPopup(provider);
 };
-
+// propiedad que usuario esta activo//
 const currentUser = () => firebase.auth().currentUser;
+
 export {
   loginEmail,
   loginRegister,

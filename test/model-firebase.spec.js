@@ -47,13 +47,12 @@ describe('loginOut', () => {
   it('debería ser una función', () => {
     expect(typeof loginOut).toBe('function');
   });
-  it('Debería poder Cerrar Sesión', () => {
-    loginEmail('etr604@gmail.com', '123456').then(() => {
+  it('Debería poder Cerrar Sesión', done => loginEmail ('etr604@gmail.com', '123456').then(() => {
       loginOut().then((response) => {
-        expect(response).toBe('undefined');
+        expect(response).toBe('undefined'); 
+        done();
       });
-    });
-  });
+    }));
 });
 describe('loginGoogle', () => {
   it('debería ser una función', () => {
