@@ -118,6 +118,7 @@ export const controllerFacebook = () => {
 export const controllerGoogle = () => {
   loginGoogle().then((response) => {
     console.log(response);
+    console.log(currentUser());
     changeRoute('#/home');
   }).catch((error) => {
     console.log(error);

@@ -1,12 +1,10 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&Cormorant+Garamond|Montserrat&display=swap');
-/*font-family: 'Open Sans', sans-serif;
-font-family: 'Ubuntu', sans-serif;
-font-family: 'Montserrat', sans-serif; */
+
 * {
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.5px; 
-    font-size: 14px;
+    font-size: 15px;
     margin: 0;
     box-sizing: border-box;
 }
@@ -14,17 +12,12 @@ body {
     min-height: 100vh;
 }
 #root {
-    /* min-height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .centerlogin{
     min-height: 100vh;
-}
-.center {
-    text-align: center;
-    width: 80%;
 }
 .flex-form {
     display: flex;
@@ -72,9 +65,6 @@ body {
     width: max-content;
     align-self: flex-end;
 }
-.facebook, .google {
-    width: 40px;
-}
 .btn-fb-google {
 margin: 10px 0;
 }
@@ -89,21 +79,14 @@ margin: 10px 0;
     font-weight: bold;
     font-size: 18px;
 }
-.logo, .foods-kids, .welcome-description {
-      display: none;  
-}
-.register-ok {
-    font-size: 16px;
-    color: #00BCD4;
-}
 .ok {
-    font-size: 13px;
+    font-size: 15px;
     margin: 15px 0;
     font-weight: bold;
     color: grey;
 }
 .ir-login {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     color: #202de0;
     line-height: none;
@@ -117,13 +100,10 @@ margin: 10px 0;
     border: 1px solid #e41749;
     color: #e41749;
 }
-/* falta responsive */
 .container-home {
     min-height: 100vh;
     width: 100%;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     flex-direction: column;
 }
 header {
@@ -175,9 +155,9 @@ main {
     margin-top: 20px;
     border: 2px solid #f2ea77;
     border-radius: 5px;
-    width: 250px;
+    width: 280px;
     height: 200px;
-    margin-right: 20px;
+    margin-right: 44px;
 }
 .color-img {
     height: 50%;
@@ -186,21 +166,17 @@ main {
 .email-user {
     display: flex;
     justify-content: center;
-    /* align-content: center; */
     height: 50%;
     align-items: center;
 }
 .colunm-post {
     border: 2px solid #c0bcbc;
-    /* width: max-content; */
     margin-top: 20px;
-    /* height: 140px; */
     border-radius: 3px;
-    /* background: #d01818; */
+    padding: 15px;
  }
  .post{
     margin-top: 25px;
-    /* height: 300%; */
     border-radius: 3px;
     padding: 15px;
     border: 1px solid;
@@ -253,7 +229,6 @@ main {
  }
  .postPublic{
     border-radius: 3px;
-    /* padding: 5% 0%; */
     border: 1px solid;
  }
  .hide {
@@ -274,7 +249,6 @@ main {
  .btn-comment {
     font-size: 22px;
     font-weight: bold;
-    /* background: #e41749; */
     color: #e41749;
     padding: 10px;
  }
@@ -285,17 +259,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 15px 15px 15px;
- } .options-post {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-
-.colunm-post {
-
-    padding: 15px;
- }
  .btn-img {
     color: #f2ea77;
     background: #e41749;
@@ -354,7 +318,6 @@ main {
     text-align: center;
     padding: 10px;
     background: white;
-    /* background: #f2ea77; */
     border-radius: 10px;
     margin: 8px;
     border: 3px solid #f2ea77;
@@ -396,18 +359,13 @@ main {
     display: inline-block;    
 }
 .main-nav li a { 
-    /* line-height: 80px; */
     text-decoration: none;
     font-weight: bold;
     padding: 0 10px;
-    /* padding: 15px; */
     align-items: center;
      display: flex; 
     color: #2f4f4f;
 }
-/* .main-nav li a:hover{
-    background:  rgb(255,255,255,0.2);
-} */
 .form-profile {
     width: 450px;
     display: flex;
@@ -421,7 +379,6 @@ main {
 .img-profile {
     width: 200px;
     border-radius: 50%;
-    /* position: relative; */
     position: absolute;
     top: 100px;
     border: 20px solid #f2ea77;
@@ -430,8 +387,6 @@ main {
     border: 1px solid #f2ea77;
     border-radius: 10px;
     padding: 10px;
-    /* align-self: self-start; */
-    /* width: 100%; */
     margin: 10px 0;
     color: darkslategray;
 }
@@ -445,9 +400,6 @@ main {
     justify-content: center;
     align-items: center;
 }
-    * {
-        font-size: 16px;
-    }
     .logo, .foods-kids, .welcome-description {
           display: block;  
     }
@@ -459,6 +411,7 @@ main {
         justify-content: space-around;
         align-items: center;
         width: 85%;
+        text-align: center;
     } 
     .welcome-description {
         width: 300px;
@@ -466,22 +419,12 @@ main {
         color: grey;
         font-size: 20px;
     }
-    .inputs {
-        width: 350px;
-        margin: 10px 0;
-    }
     .facebook, .google {
         width: 48px;
     }
     .register-ok {
         font-size: 30px;
         color: #e41749;
-    }
-    .ok {
-        font-size: 15px;
-    }
-    .ir-login {
-        font-size: 18px;
     }
     @media screen and (max-width:764px) { 
 
@@ -501,7 +444,6 @@ main {
     .welcome-description {
         display: none;
     }
-    /* F */  
 }
 @media screen and (max-width:425px) {
     .current-user {

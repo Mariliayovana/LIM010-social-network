@@ -47,13 +47,12 @@ describe('loginOut', () => {
   it('debería ser una función', () => {
     expect(typeof loginOut).toBe('function');
   });
-  it('Debería poder Cerrar Sesión', () => {
-    loginEmail('etr604@gmail.com', '123456').then(() => {
-      loginOut().then((response) => {
-        expect(response).toBe('undefined');
-      });
+  it('Debería poder Cerrar Sesión', done => loginEmail('etr604@gmail.com', '123456').then(() => {
+    loginOut().then((response) => {
+      expect(response).toBe(undefined);
+      done();
     });
-  });
+  }));
 });
 describe('loginGoogle', () => {
   it('debería ser una función', () => {
@@ -79,11 +78,8 @@ describe('currentUser', () => {
   it('debería ser una función', () => {
     expect(typeof currentUser).toBe('function');
   });
-  it('debería devolver usuario con sesión activa', () => {
-    loginEmail('etr604@gmail.com', '123456').then(() => {
-      currentUser().then((user) => {
-        expect(user.email).toBe('etr604@gmail.com');
-      });
-    });
-  });
+  it('debería devolver usuario con sesión activa', () => loginEmail('etr604@gmail.com', '123456').then(() => {
+    const user = currentUser();
+    expect(user.email).toBe('etr604@gmail.com');
+  }));
 });
