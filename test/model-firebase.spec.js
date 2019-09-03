@@ -60,7 +60,7 @@ describe('loginGoogle', () => {
   });
   it('Debería poder Iniciar Sesión con una cuenta de Google', () => {
     loginGoogle('etr604@gmail.com').then((user) => {
-      expect(user.providerData[0].providerId).toBe('google.com');
+      expect(user.isAnonymous).toBe(false);
     });
   });
 });
@@ -70,7 +70,7 @@ describe('loginFacebook', () => {
   });
   it('Debería poder Iniciar Sesión con una cuenta de Facebook', () => {
     loginFacebook('etr604@gmail.com').then((user) => {
-      expect(user.providerData[0].providerId).toBe('facebook.com');
+      expect(user.isAnonymous).toBe(false);
     });
   });
 });
