@@ -4,7 +4,7 @@
 * {
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.5px; 
-    font-size: 14px;
+    font-size: 15px;
     margin: 0;
     box-sizing: border-box;
 }
@@ -80,7 +80,7 @@ margin: 10px 0;
     font-size: 18px;
 }
 .ok {
-    font-size: 13px;
+    font-size: 15px;
     margin: 15px 0;
     font-weight: bold;
     color: grey;
@@ -259,7 +259,11 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
  } 
+=======
+}
+>>>>>>> 3f558c43f6c377d3a57fc430242b6ab2db2b36c0
  .btn-img {
     color: #f2ea77;
     background: #e41749;
@@ -400,7 +404,10 @@ main {
     justify-content: center;
     align-items: center;
 }
+<<<<<<< HEAD
   
+=======
+>>>>>>> 3f558c43f6c377d3a57fc430242b6ab2db2b36c0
     .logo, .foods-kids, .welcome-description {
           display: block;  
     }
@@ -445,7 +452,6 @@ main {
     .welcome-description {
         display: none;
     }
-    /* F */  
 }
 @media screen and (max-width:425px) {
     .current-user {
